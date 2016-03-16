@@ -1,0 +1,28 @@
+{
+  "name": "adaptive-nav",
+  "version": "0.5.0",
+  "description": "JS plugin to allow navigation menus to adapt to viewport width",
+  "main": "index.html",
+  "scripts": {
+      "minify": "uglifyjs src/js/adaptive-nav.js -m -o src/js/adaptive-nav.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunpietro/adaptive-nav.git"
+  },
+  "keywords": [
+    "js",
+    "responsive",
+    "menu",
+    "adaptive",
+    "nav",
+    "navigation",
+    "resize"
+  ],
+  "author": "Piotr Nalepa <poczta@piotrnalepa.pl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sunpietro/adaptive-nav/issues"
+  },
+  "homepage": "https://github.com/sunpietro/adaptive-nav"
+}
