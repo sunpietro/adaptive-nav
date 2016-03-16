@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4rem;
+}
+
+body {
+    width: 90vw;
+    margin: 2rem auto;
+}
+
+.adaptive-nav {
+    width: 100%;
+    padding: 1rem;
+    background: #b30;
+    color: #fff;
+    position: relative;
+}
+
+.adaptive-nav--has-toggler-active {
+    padding-right: 3.4rem;
+}
+
+.adaptive-nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #b30;
+}
+
+.adaptive-nav__list--secondary {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+}
+
+.adaptive-nav__list__item {
+    white-space: nowrap;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.adaptive-nav__list__item:hover {
+    text-decoration: underline;
+}
+
+.adaptive-nav__toggler {
+    background: transparent;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 3.4rem;
+    width: 3.4rem;
+    transform: translate(0, -50%) rotate(0);
+    transform-origin: center center;
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    padding: 0;
+}
+
+.adaptive-nav__toggler:before,
+.adaptive-nav__toggler:after {
+    content: '||';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    letter-spacing: .125rem;
+}
+
+.adaptive-nav__toggler:after {
+    transform: translate(-75%, -50%);
+}
+
+.adaptive-nav__toggler:hover,
+.adaptive-nav__toggler--active {
+    transform: translate(0, -50%) rotate(90deg);
+}
+
+.is-hidden {
+    display: none!important;
+}
