@@ -1,4 +1,16 @@
 /* global AdaptiveNav, define, self */
+/**
+ * AdaptiveNav - JS plugin to allow navigation menus to adapt to viewport width | v1.0.0
+ * https://github.com/sunpietro/adaptive-nav
+ *
+ * Copyright 2016 Piotr Nalepa
+ * http://blog.piotrnalepa.pl
+ *
+ * Released under the MIT license
+ * https://github.com/sunpietro/adaptive-nav/blob/master/LICENSE
+ *
+ * Date: 2016-03-16T22:30Z
+ */
 ;(function (f) {
     var moduleName = 'adaptiveNav',
         typeUndefined = 'undefined';
