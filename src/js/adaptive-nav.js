@@ -1,6 +1,6 @@
 /* global AdaptiveNav, define, self */
 /**
- * AdaptiveNav - JS plugin to allow navigation menus to adapt to viewport width | v1.0.0
+ * AdaptiveNav - JS plugin to allow navigation menus to adapt to viewport width | v1.0.2
  * https://github.com/sunpietro/adaptive-nav
  *
  * Copyright 2016 Piotr Nalepa
@@ -289,7 +289,8 @@
 
         _updateNav();
 
-        window.addEventListener('resize', _updateNavOnResize);
+        window.addEventListener('resize', _updateNavOnResize, false);
+        window.addEventListener('orientationchange', _updateNavOnResize, false);
 
         return {
             /**
