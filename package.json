@@ -1,6 +1,6 @@
 {
   "name": "adaptive-nav",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "JS plugin to allow navigation menus to adapt to viewport width",
   "main": "index.html",
   "scripts": {
