@@ -6,9 +6,14 @@ To test it by yourself you can resize the browser window and have fun.
 
 ![AdaptiveNav in action](https://dl.dropboxusercontent.com/u/55990510/adaptive-nav.gif)
 
+## How to get the AdaptiveNav.js plugin?
+
+Download the zip file from Github repository or run the command in a terminal: `npm install adaptive-nav`
+
 ## How to use it?
 
 The usage is simple. Just include the `adaptive-nav.js` script into your HTML code, the following way:
+
 
 ```html
 <script src="src/js/adaptive-nav.js"></script>
